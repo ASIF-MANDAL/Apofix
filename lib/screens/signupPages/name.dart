@@ -1,3 +1,4 @@
+import 'package:apofix/consts/appointmentcard.dart';
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -49,10 +50,10 @@ class Name extends StatelessWidget {
                   fontWeight: FontWeight.w500,
                 ),
                 focusedBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black), // Color of the line when the TextField is focused
+                  borderSide: BorderSide(color: Colors.black),
                 ),
                 enabledBorder: UnderlineInputBorder(
-                  borderSide: BorderSide(color: Colors.black), // Color of the line when the TextField is not focused
+                  borderSide: BorderSide(color: Colors.black),
                 ),
                 contentPadding: EdgeInsets.all(12.0.sp),
               ),

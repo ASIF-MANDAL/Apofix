@@ -1,5 +1,7 @@
+import 'package:apofix/consts/appointmentcard.dart';
 import 'package:apofix/screens/signupPages/gender.dart';
 import 'package:apofix/screens/signupPages/name.dart';
+import 'package:apofix/screens/home/notification.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -12,13 +14,13 @@ class apofix extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return ScreenUtilInit(
+    return const ScreenUtilInit(
       designSize: Size(430, 932),
       minTextAdapt: true,
       splitScreenMode: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Name(),
+        home: Notifications(),
       ),
     );
   }
