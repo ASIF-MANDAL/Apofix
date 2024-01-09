@@ -3,9 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class ContinueButton extends StatelessWidget {
+  final VoidCallback onPressed;
+
   const ContinueButton({
     Key? key,
-  });
+    required this.onPressed,
+  }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +23,7 @@ class ContinueButton extends StatelessWidget {
             borderRadius: BorderRadius.circular(8.0.sp),
           ),
         ),
-        onPressed: () {},
+        onPressed: onPressed,
         child: Text('Continue'),
       ),
     );
