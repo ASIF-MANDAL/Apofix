@@ -1,3 +1,4 @@
+import 'package:apofix/screens/Settings/settingpage.dart';
 import 'package:apofix/screens/home/appointment.dart';
 import 'package:apofix/screens/home/profile.dart';
 import 'package:apofix/screens/signupPages/gender.dart';
@@ -5,6 +6,7 @@ import 'package:apofix/screens/signupPages/name.dart';
 import 'package:apofix/screens/home/notification.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+
 
 
 void main() {
@@ -22,7 +24,7 @@ class apofix extends StatelessWidget {
       splitScreenMode: true,
       child: MaterialApp(
         debugShowCheckedModeBanner: false,
-        home: Appointment(),
+        home: SettingsPage(),
       ),
     );
   }

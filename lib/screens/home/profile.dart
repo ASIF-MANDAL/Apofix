@@ -4,6 +4,8 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import '../../consts/appointmentcard.dart';
+import '../../consts/appointmentdropdown.dart';
+
 
 class Profile extends StatelessWidget {
   const Profile({super.key});
@@ -138,14 +140,9 @@ class Profile extends StatelessWidget {
                 ),
                 SizedBox(height: 41.sp,),
                 Row(
+                  mainAxisAlignment: MainAxisAlignment.start,
                   children: [
-                    Text("Upcoming Appointment",
-                    style: GoogleFonts.amiko(
-                      fontSize: 14.sp,
-                      fontWeight: FontWeight.w600,
-                      color: Colors.black,
-                    ),),
-                    IconButton(onPressed: (){}, icon: Icon(Icons.arrow_drop_down)),
+                    AppointmentDropdown(),
                   ],
                 ),
                 SizedBox(height: 28.sp,),
